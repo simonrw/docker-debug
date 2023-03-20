@@ -17,3 +17,5 @@ docker run --rm -it ghcr.io/simonrw/docker-debug:main
 * `curl`
 * `python3`
 * `python3-boto3`
+* `jq`
+* [`fx`](https://github.com/antonmedv/fx)
