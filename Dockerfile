@@ -6,4 +6,5 @@ RUN apk update && \
     apk add \
     curl \
     iproute2 \
-    bind-tools
+    bind-tools \
+    py3-boto3
