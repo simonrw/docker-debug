@@ -8,6 +8,7 @@ RUN apk --no-cache add \
     bind-tools \
     jq \
     aws-cli \
+    nmap \
     py3-boto3
 
 # install fx
