@@ -3,12 +3,13 @@ FROM alpine:latest
 LABEL org.opencontainers.image.authors="s.r.walker101@gmail.com"
 
 RUN apk --no-cache add \
+    aws-cli \
+    bind-tools \
     curl \
     iproute2 \
-    bind-tools \
     jq \
-    aws-cli \
     nmap \
+    openssl \
     py3-boto3
 
 # install fx
