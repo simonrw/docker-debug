@@ -7,6 +7,7 @@ RUN apk --no-cache add \
     iproute2 \
     bind-tools \
     jq \
+    aws-cli \
     py3-boto3
 
 # install fx
