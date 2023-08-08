@@ -19,7 +19,7 @@ RUN curl -Lo /usr/local/bin/fx $FX_URL && \
     chmod +x /usr/local/bin/fx
 
 # install cert-info
-ENV CERT_INFO_VERSION=0.1.0
+ENV CERT_INFO_VERSION=0.1.1
 # TODO: arch specific
 ENV CERT_INFO_URL=https://github.com/simonrw/cert-info/releases/download/v$CERT_INFO_VERSION/cert-info_${CERT_INFO_VERSION}_linux_amd64.tar.gz
 ENV CERT_INFO_TARBALL_NAME=/tmp/cert-info_${CERT_INFO_VERSION}_linux_amd64.tar.gz
