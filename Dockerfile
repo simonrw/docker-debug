@@ -26,4 +26,5 @@ ENV CERT_INFO_TARBALL_NAME=/tmp/cert-info_${CERT_INFO_VERSION}_linux_amd64.tar.g
 RUN curl -Lo ${CERT_INFO_TARBALL_NAME} ${CERT_INFO_URL} && \
     tar -C /tmp -x -f ${CERT_INFO_TARBALL_NAME} && \
     mv /tmp/cert-info /usr/local/bin/cert-info && \
+    chmod +x /usr/local/bin/cert-info && \
     rm ${CERT_INFO_TARBALL_NAME}
