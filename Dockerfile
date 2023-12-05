@@ -10,7 +10,8 @@ RUN apk --no-cache add \
     jq \
     nmap \
     openssl \
-    py3-boto3
+    py3-boto3 \
+    tini
 
 # install fx
 ENV FX_VERSION=24.0.0
@@ -28,3 +29,5 @@ RUN curl -Lo ${CERT_INFO_TARBALL_NAME} ${CERT_INFO_URL} && \
     mv /tmp/cert-info /usr/local/bin/cert-info && \
     chmod +x /usr/local/bin/cert-info && \
     rm ${CERT_INFO_TARBALL_NAME}
+
+ENTRYPOINT ["/sbin/tini", "--"]
