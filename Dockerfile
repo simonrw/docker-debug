@@ -11,6 +11,7 @@ RUN apk --no-cache add \
     nmap \
     openssl \
     py3-boto3 \
+    kubectl \
     tini
 
 # install fx
