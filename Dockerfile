@@ -36,7 +36,6 @@ ARG CONTAINER_USERNAME=docker-debug
 # create non-root user
 RUN adduser -s /bin/sh -D -u 1000 ${CONTAINER_USERNAME}
 WORKDIR /home/${CONTAINER_USERNAME}
-USER ${CONTAINER_USERNAME}
 
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["sh"]
